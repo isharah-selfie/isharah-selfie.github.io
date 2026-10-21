@@ -198,7 +198,7 @@ footer{padding:32px 0;border-top:1px solid var(--line);color:var(--mute);font-si
       <p class="affil">King Fahd University of Petroleum &amp; Minerals (KFUPM)</p>
       <div class="btns">
         <a class="btn primary" href="#">Paper</a>
-        <a class="btn soon" href="#" title="Link coming soon">Dataset (coming soon)</a>
+        <a class="btn primary" href="https://huggingface.co/datasets/GufranSabri/isharah-selfi" target="_blank" rel="noopener">Dataset</a>
         <a class="btn soon" href="#" title="Link coming soon">Code (coming soon)</a>
         <a class="btn soon" href="#cite">BibTeX (coming soon)</a>
       </div>
@@ -340,20 +340,6 @@ footer{padding:32px 0;border-top:1px solid var(--line);color:var(--mute);font-si
         </div>
       </div>
     </div>
-
-    <h3 class="sub-h reveal">How Isharah-Selfie compares to Arabic CSLR datasets</h3>
-    <div class="tbl reveal">
-      <table>
-        <thead><tr><th>Dataset</th><th>Variety</th><th>Samples</th><th>Sent.</th><th>Gloss</th><th>Signers</th><th>Hours</th><th>Setup</th></tr></thead>
-        <tbody>
-          <tr><td>ArabSign</td><td>Unified ArSL</td><td>9,335</td><td>50</td><td>95</td><td>6</td><td>10</td><td>Kinect RGB-D</td></tr>
-          <tr><td>JUMLA-QSL-22</td><td>Qatari SL</td><td>6,300</td><td>900</td><td>201</td><td>7</td><td>28</td><td>4-camera studio</td></tr>
-          <tr><td>Isharah</td><td>Saudi SL</td><td>30,000</td><td>2,000</td><td>1,132</td><td>18</td><td>43.19</td><td>Unconstrained RGB</td></tr>
-          <tr class="ours"><td>Isharah-Selfie</td><td>Saudi SL</td><td>8,997</td><td>1,493</td><td>961</td><td>16</td><td>12.5</td><td>Handheld selfie</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="note">Isharah-Selfie complements Isharah: they share 546 gloss labels (56.9% of Selfie’s vocabulary), but only 29 complete gloss sequences match exactly, since a shared gloss may be realized differently with one hand.</p>
   </div>
 </section>
 
@@ -448,33 +434,18 @@ footer{padding:32px 0;border-top:1px solid var(--line);color:var(--mute);font-si
       </div>
       <p class="note">WER (%) with CorrNet+, finetuning only the 1D conv, BiLSTM and classifier layers. Even within the same sign language, two-handed and one-handed signing don’t transfer.</p>
     </div>
-
-    <div class="finding">
-      <div class="reveal"><b>Selfie is hard</b>Best RGB model (CorrNet+) still reaches 39.8% WER signer-independent.</div>
-      <div class="reveal"><b>Composition is harder</b>WER jumps to ~68% on unseen sentences; models lean on memorized patterns.</div>
-      <div class="reveal"><b>Pose is fragile</b>Hands leaving the frame and noisy keypoints hurt skeleton-based methods.</div>
-    </div>
   </div>
 </section>
 
-<section id="ethics">
-  <div class="wrap">
-    <div class="grid g2">
-      <div class="card reveal"><h3>Responsible release</h3><p>The dataset contains identifiable videos in sensitive domains (healthcare, legal, emergency), so it will be released for <b>non-commercial research only</b> under a signed usage agreement. Models should not be used for surveillance, biometric identification, or high-stakes deployment without further validation. IRB approved; all signers consented.</p></div>
-      <div class="card reveal"><h3>Limitations</h3><p>Male signers and the 31–40 age group are over-represented; the data is ArSL only; minor annotation inconsistencies may remain; one-handed adaptation can make some signs ambiguous; utterances are short; baselines are single runs.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="alt" id="cite">
+<section id="cite">
   <div class="wrap">
     <div class="sec-head reveal"><span class="eyebrow">Citation</span><h2>Cite this work</h2></div>
     <div class="bib reveal" id="bibtex" style="text-align:center;white-space:normal;padding:44px 26px"><span class="tag">COMING SOON</span><p style="margin-top:14px;color:var(--mute);font-size:15px">The BibTeX entry will be available once the paper is published.</p></div>
 
     <div class="cta reveal" style="margin-top:56px">
       <h2>Build sign language tech that works in your pocket</h2>
-      <p>Access to Isharah-Selfie will be granted for non-commercial research under a signed usage agreement.</p>
-      <div class="btns"><a class="btn primary" href="#">Request access (coming soon)</a><a class="btn" href="mailto:hluqman@kfupm.edu.sa">Contact: hluqman@kfupm.edu.sa</a></div>
+      <p>Isharah-Selfie is available for non-commercial research under a signed usage agreement.</p>
+      <div class="btns"><a class="btn primary" href="https://huggingface.co/datasets/GufranSabri/isharah-selfi" target="_blank" rel="noopener">Dataset on Hugging Face</a><a class="btn" href="mailto:hluqman@kfupm.edu.sa">Contact: hluqman@kfupm.edu.sa</a></div>
     </div>
   </div>
 </section>
